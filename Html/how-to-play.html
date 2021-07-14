@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tales of Rievara</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheets">
+     <style>
+        
+        #btnscrolltotop {
+        position: fixed;
+        right : 10px;
+        bottom: 100px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background:red;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: white ;
+        border: none ;
+        outline: none;
+        cursor: pointer;
+      }
+      </style>
+       <script>
+        const btnscrolltotop= document.queryselector("#btnscrolltotop");
+        btnscrolltotop.addeventlistener("click", function (){
+          window.scrollto(0, 0);
+        })
+      </script>
+    </head>
+        <body>
+            <form> <button type="submit" id="btnscrolltotop">
+                <i class="material-icon">Top</i>
+              </button>
+             </form>
+            <nav>
+                <ul>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="how-to-play.html">How to Play</a></li>
+                   <li><a href="Gallery.html"> Gallery </li>
+                    <li><a href="contact.html">Contact</a></li>
+                     <li><a href="Update.html">Updates</a></li>
+               </ul>
+            </nav>
+               <img id="Banner" src="Artwork/tales of rievara.jpg" alt="your browser doesnt support this image" >
+              <br>
+               <audio controls 
+            src="media/Music.mp3" >
+    <span>Your browser doesn't support this file.</span>
+</audio>
+ <div>
+            <h1 font-size="24px">How to Play, The card game manual.</h1>
+            <p>
+                In this section youll find information explaining how to play the game, rules, characters, win conditions and information on equipement.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#characters">Characters</a></li>
+                        <li><a href="#equipment">Equipement</a></li>
+                        <li><a href="#items">Items</a></li>
+                        <li><a href="#monsters">Monsters</a></li>
+                        <li><a href="#encounters">Encounters</a></li>
+                        <li><a href="#quests">Quests</a></li>
+                    </ul>
+                </nav><h3>Tile Cards</h3>
+            <p>
+                Tile cards act as <strong>movement </strong>spaces, the tiles have a variety of terrains, encounters and hostiles.
+                There are a total of 52 tiles in a deck and each card has 2 tiles! at the start of a players turn they pick up a tile card and place it somewhere on the playable map.
+                the tiles are:
+                <li>Movement Tiles</li>
+                <li>Enemy Tiles</li>
+                <li>Encounter Tiles</li>
+                <li>Dead End Tiles</li>
+                <li>Effect Tiles</li>
+                <p>
+                    <strong>Movement</strong> tiles allow players to move throughout the map, however when a player encounters a <strng>Dead End</strng> tile it prevents any movement in that direction and can no longer have tiles placed connecting to it.
+                    </p>
+                    <p>
+                        <strong>Encounter</strong> tiles have a variety of different chances, 
+                        players can come across <strong>Traders</strong> allowing them to buy and sell equipement and items, 
+                        <br>
+                        <strong>Quests</strong> Some encounters will have quests attached giving players rewards on completion these can be found in towns too, 
+                        <br>
+                        <strong>Skill</strong> encounters have 2 different types: Players can come across a multiple choice skill based test or a test of their base special stats, depending on the outcome will affect the reward given, 
+                        <br> 
+                        <strong>Carnival</strong> The carnival is a unique encounter that allows players to attempt games to gain rewards once per person.
+                    </p>
+                    <p>
+                    Tile cards can also have some negative affects: 
+                    <strong>Hostile</strong> tiles, these tiles will spawn a monster which players draw from a card deck which will give a random level monster (0-2) for the current version there are only a few monsters.
+                    Mnsters will do damage each turn they are left on the board, players can als gain <strong>Items and Equipement</strong> after defeating them.
+                    <br>Monster levels are random and not determined on a players level or stats.
+                <br>
+            <br>
+        The other negative tile is a <strong>Effect</strong> tile, this will inflict a status ailement on a player when they land on this tile, these can be a variety of deadly conconctions. Burn, Poison, Slow or even Weakness affects.</p>
+            </p>
+        </div>
+<div id="characters">
+<h1>Charcaters and Lore</h1>
+<p>
+<h3>Tesmalia the Elf Huntress</h3>
+Tesmalia is an Elvish huntress born in the region of the <bold>Mystical Forest</bold>
+<br>
+Tesmalia starts equipped with a <bold>Short Bow</bold> and wears a <bold>Amulet of The Nine Seas Church</bold>
+She does a base damage of 6-12 depending on a dice roll. Tesmalia can equip <bold>Light Armour</bold>
+any form of Ranged bow or small dagger! 
+<br>
+Tesmalia has two "Abilities":
+<li>Snipe Shot- Fires an armour piercing arrow dealing 8-12 base damage. (must have a Bow equipped)</li>
+<li>Evade Up- Increases Evasion for 3 turns by 5.</li>
+</p>
+<p>
+    <h3>Kinvar Hudor the Dwarven Warrior</h3>
+    Kinvar Hudor is a Dwarvern Warrior born in the <bold>Mountainous region</bold>. 
+    <br>
+    Kinvar starts equipped with a <bold>Two Handed Axe</bold> and holds a <bold>Iron Buckler</bold> on his arm, 
+    Kinvar does a base damage of 8-14 depending on dice role.
+    Kinvar can equip "Hevay Armour", "Two Handed Weapons" and a "Buckler shield".
+    <br>
+    Kinvar had two "Abilities"
+    <li>Gem Find- Search the deck for one rare item</li>
+    <li>Armour Up- increases armour by 5 for 3 turns</li>
+</p>
+<p>
+    <h3>Licera the Apprentice Mage</h3>
+    Licera is a nordic apprentice mage, bonr in <bold>Rievara</bold> and studies and the acadamey of mages.
+    <br>
+    Licera starts equipped with <bold>Training Staff</bold> and wears an <bold>Amulet of Curse Immunity</bold> around her neck,
+    Licera does a base damage of 6-10 depending on dice roll.
+    <br>
+    Licera has two "Abilities"
+    <li>Area Blast- Does 3x damage of dice roll to the target</li>
+    <li>Resist Up- Increases Magic resistance by 5 for 3 turns</li>
+</p>
+<p>
+    <h3>Bogs-Warl the Goblin Thief</h3>
+    Bogs-Warl is of Goblin origin, he was raised by the Largiles in the Lirk Swamp.
+   <br>
+    Bogs-Warl starts equipped with a <bold>Serrated Dagger</bold> and holds a <bold>Coin Purse</bold> on his back,
+    Bogs-Warl does a base damage of 6-10 and has a chance to cause bleed depending on dice roll.
+    <br>
+    Bogs-Warl has two "Abilities"
+    <li>Steal- Chooses a player and steals 3 cards, chooses a card and discrads two</li>
+    <li>Evade Up- Increases Evasion by 10 for 3 turns</li>
+</p>
+<p>
+    <h3>Folora the Priestess</h3>
+    Folora is a Nordic Priestess, her origin is unkown however she resides in the "Nine Seas Church"
+    <br>
+    Folora starts equipped with a <bold>Healing Staff</bold> and wears an <bold>Amulet of the Nine Seas Church</bold> around her neck,
+    Folora does a base damage of 6-9 depending on dice roll.
+    <br>
+    Folora has two "Abilities"
+    <li>Party Heal- Heals up to 4 other players by 25% of their max health</li>
+    <li>Harvest- Search the item deck for a Healing Item</li>
+</p>
+</div>
+<div id="equipment">
+    <h2>Note</h2>
+    <p>Items listed below are only <strong>Beta</strong> examples, more items will be added as the project moves forward. Cards will be implemented next to their counter parts once their creation is complete.</p>
+    <h1>Equipment</h1>
+<p>
+    <h3>Armour</h3>
+    In this section it will explain the two types of <bold>Armour</bold> who can equip them and stats required for certain pieces.
+    <br>
+    Equipment cards are obtainable for all players, however some equipement reuire <bold>Dexterity</bold> or a <bold>Specail</bold> stat like Strength or Perception.
+    <br>
+    <img src="Artwork/steelplatedarmor.jpg" alt="Your browser doesnt support this image" height="350" width="250"><!-- Talk to Gerry about implementing this better!-->
+    <h2>Heavy Armour</h2>
+    Heavy armour is a set of <bold>Armour</bold> with high defense and damage resistance, however it tends to be very heavy and reuires a high <bold>Strength</bold> stat.
+    Initially the only characters that can equip these are <strong>Kinvar Hudor</strong> but in future there will be additional characters who can equip these items.
+<br>
+Heavy armour also contains status buffs, for example certain armour like <bold>Steel Plated</bold> prevent <bold>Bleed</bold> status affects and can also prevent a character from being <bold>Pierced</bold>
+<li><strong>Chainmail</strong>- Strength 4, Endurance 3, Defense 6</li>
+<li><strong>Steel Plated</strong>- Strength 5, Endurance 4, Defense 9 </li>
+<li><strong>Crusader Armour</strong>- Strength 7, Endurance 5, Defense 12</li>
+<li><strong>Chain Hood</strong>- Strength 3, Endurance 2, Defense 2</li>
+<li><strong>Steel Boots</strong>- Strength 4, Defense 3</li>
+<br>
+For Example:
+<br>
+</p>
+<p>
+    <h2>Light Armour</h2>
+    Light Armour is a set of <bold>Armour</bold> with low defense and damage resistance, however it tends to be very light and can boost <bold>Agility</bold> but is more supseptible to status effects.
+    Initially, most characters can use and equip the armour, <strong>Tesmalia</strong> can equip specialised armour to increase her <bold>Perception.</bold>
+    <br>
+    Light Armour also provides a boost to <bold>Evasion</bold> and <bold>speed</bold> and protects against <bold>slowness</bold> buffs.
+    <li><strong>Leather vest</strong>- Perception 3, Agility 2, Defense 2</li>
+    <li><strong>Cotton Vest</strong>- Endurance 2, Defense 2</li>
+    <li><strong>Feathered Hat</strong>- Perception 2, Agility 1, Defense 1</li>
+    <li><strong>Leather Hood</strong>- Endurance 2, Defense 2</li>
+    <li><strong>Leather Boots</strong>- Strength 2, Endurance 2, Defense 2</li>
+    <li><strong>Cotton Pads</strong>- Endurance 2, Defense 1</li>
+</p>
+<p>
+    <h2>Magical Armour</h2>
+    Magical armour is a set of <bold>Armour</bold> with low defense and damage resistence but high Magic Resistance, the armour tends to be very light but offers little to none status protection.
+    Initially, most characters can equip this armour however certain <bold>Robes</bold> require high <bold>Intelligence</bold>, <strong>Folora</strong> can wear <bold>Blessed</bold> Armour, whereas <strong>Licera</strong> can't equip this type of armour.
+    <br>
+    Magical Armour also provides a boost to <bold>Blessings</bold> and <bold>Curse Immunity</bold> and negates certain <bold>Status</bold> effects.
+    <li><strong>Robes</strong>- stats: Intelligence 5, Resistance 5, Defense 1</li>
+    <li><strong>Cultist Hood</strong>- stats: Intelligence 3, Resistance 3, Defense 1</li>
+    <li><strong>Enchanted Boots</strong>- stats: Intelligence 4, Resistance 2, Defense 2</li>
+</p>
+<p>
+    
+    <h1>Weapons</h1>
+    Weapon Cards have 5 types of obtainable weapons.
+    These are:
+    <li>Two Handed</li>
+    <li>One Handed</li>
+    <li>Bows</li>
+    <li>Magic Staffs</li>
+    <li>Daggers</li>
+    <li>Shields</li>
+<img src="Artwork/battleaxe.jpg" alt="Your browser doesn't support this image" height="350" width="250" >
+<br>
+<h3>One Handed Swords</h3>
+<li><strong>Iron Sword</strong>- Stats: Dexterity 7, Strength 3, Base Damage 10, Crit Chance 3%</li>
+<li><strong>Goblin Axe</strong>- stats: Dexterity 6, Strength 2, Base Damage of 9, Crit Chance 2, Effect Stun</li>
+<br>
+<h3>Two Handed Swords</h3>
+<li>Broadsword- stats: Dexterity 13, Strength 5, Base Damage of 14, Crit Chance 5%</li>
+<li>Battle Axe- stats: Dexterity 13, Strength 6, Base Damage of 14, Blled effect</li>
+<li>Longsword- stats: Dexterity 15, Strength 6, Base Damage of 17, Crit Chance 4%, Bleed effect</li>
+<br>
+<h3>Shields</h3>
+<li><strong>Iron Buckler</strong>- stats: Endurance 4, Strength 3, Defense 3, Skills- Block, Bash Damage of 3</li>
+<li><strong>Gaurd Shield</strong>- stats: Endurance 6, Strength 4, Defense 6, Skill- Block</li>
+<br>
+<h3>Bows</h3>
+<li><strong>Short Bow</strong>- stats: Perception 3, Base Damage of 7, Passive- Ranged (Allows attacks from 1 additional tile away)</li>
+<li><strong>Long Bow</strong>- stats: Perception 5, Base Damage of 11, Passive- Ranged Skill- Snipe shot</li>
+<br>
+<h3>Staffs</h3>
+<li><strong>Fire Staff</strong>- stats: Intelligence 4, Base Damage of 8, Passive- Ranged, Effect Burn</li>
+<li><strong>Apprentice Staff</strong>- stats: Intelligence 6, Base Damage of 12, Passive- Ranged, Skill- Area Blast</li>
+<br>
+<h3>Daggers</h3>
+<li><strong>Dagger</strong>- stats: Dexterity 5, Strength 2, Base Damage of 8, Crit Chance 1%, Effect Bleed</li>
+</p>
+      </div>
+      <div id="items">
+          <h1>Item Cards</h1>
+          <p>Item Cards provide different ailements, potions and accessories that provide additional buffs or ngate negative buffs.</p>
+          <br>
+          <p>
+              Here is a full list of all the <strong>Items</strong> in the current Beta version.
+              <li><strong>Potion of Healing</strong> Heals 20HP and causes 10 Damage to Spirits on the map when used</li>
+              <li><strong>Potion of Haste</strong> Permanantly increase Speed by 5</li>
+              <li><strong>Potion of Strength</strong> Permanantly increases Strength by 2</li>
+              <li><strong>Armour Up</strong> Permanantly increase Armour by 1</li>
+              <li><strong>Evade Up</strong> Permanantly increases Evasion by 3</li>
+              <br>
+              <img src="Artwork/GOBLET.jpg" alt="Your browser doesn't support this image." width="250" height="350"
+          </p>
+          <h3>Accessories</h3>
+          <p>
+              Accessories are wearable items, just like <strong>Armour</strong> these items hold additional buffs and immunity to effects.
+              <br>
+              Currently only <strong>Stat</strong> relevant accessories have been added, more will be added in the future.
+              <li><strong>Ring of Defense</strong> increases Defense by 2</li>
+              <li><strong>Amulet of Agility</strong> increases Agility by 3</li>
+              <li><strong>Enchanted Scarf</strong> increases Magic Resistance by 4</li>
+              <li><strong>Amulet of the Nine Seas Church</strong> Immunity to Curse and gives <strong>Blessed</strong> buff</li>
+          </p>
+      </div>
+      <div id="monsters">
+          <h1>Monster Cards</h1>
+          <p>
+              <h3>Monster Types</h3>
+              Monster's have different types of effects or are generally weak to certain types of attacks, for example a <strong>Fire Element</strong> would be weak to any water attacks.
+              <br>
+              With this in mind, while we haven't added any characters who can deal different types of magic, we also haven't added the elemental type monsters for the initial build. 
+              This will help keep the game balanced during beta testing and allow focus on the base structure.
+              <br>
+              However, we plan to add new <strong>Monsters</strong> along with new races and characters. The characters available from the first release are only starter models and will be further developed as the project improves.
+          </p>
+          <p>
+              In the initial build the monsters available can deal special status ailments such as poison or bleed, depending on a dice roll factor and if any debuffs have been placed on the monster.
+              <br>
+              <h3>How they appear</h3>
+              Monsters appear on the deck tile cards, on the bottom of the card there is a counter which determines the difficulty of the monster. For the intial release there is only one difficulty, however more will be implemnted throughout the year.
+              <br>
+              Once a Monster has been located on a card, players must try and defeat them as soon as possible whereas the conspirators task is to prolong the damage being done.
+              If a monster isn't destroyed within a turn then the monster will deal damage to all players within a certain radius (yet to be established).
+              <br>
+              For the base structure of summoning monsters any that appear through tile cards have their levels randomised along with their damage outputs, future features will see a conspirator who can summon monsters after meeting certain requirements and depending on their stats will depend on the outcome of the monsters stats.
+          </p>
+          <p>
+              <h3>Monster Cards</h3>
+              The cards are designed showing players the HP and basic stats, however skills are hidden for players with low perception or without a passive skill.
+              <br>
+              Here is an example card for the monsters, please note these may change before the actual release.
+              <!-- Place the assembled monster card here at a later date, add before release date/winter. This is not needed for the original project and is being used for the full live version released in July.-->
+              <br>
+              When attempting to damage a monster, players are required to roll the dice. This affects the damage output and if a player rolls a perfect dice or a double they inflict critical damage.
+              If a player is using a status affect skill they must roll a double to successfully apply the affect, if a player fails the roll they have a chance to recieve a fraction of damage.
+              <br>
+              <h3>Monsters</h3>
+              Below is a list of the monsters currently being added to the beta version.
+              <br>
+              <br>
+              <li><strong>Golem</strong>- The Golem is a rock like creature originated from the Mountainous region, his stats are as follows: 
+                <br>
+                Level 1 - Health Points:50, Strength 2, Base Damage 2-12, Defense 3.
+                <br>
+                 Skills are: Crush- Requires a perfect roll, inflicts Damage based on the dice roll using Strength x Roll.
+            Bash- Requires one dice roll, Damage of Strength x Dice and causes Stun effect.
+        <br>
+    Uses: Fists- Unarmed combat.</li>
+    <br>
+            <li><strong>Minotaur</strong>- The Minotaur is a bull like creature originated from the depths of Himgar Pass, his stats are as follows:
+            <br>
+            Level 1- Health Points 52, Strength 3, Base Damage of 3-21, Defense 2.
+            <br>
+            Skills are: Charge- Requires one dice roll and inflicts damage based on Strength x Roll.
+            Pierce- Requires two dice rolls, negates armour and does 1-6 Damage can cause bleed on a prefect roll.
+            <br>
+            Uses: Mace- +3 Damage, Horns- Causes bleed when using Charge.
+        </li>
+        <br>
+        <li> <strong>Troll</strong>- The Troll is a Ogre type beast found near towns or bridges.
+        <br>
+    Level 1- Health Points 48, Strength 2, Base Damage of 2-16, Defense 1.
+<br>
+Skills are: Bash- Requires one dice roll and inflicts Damage by Strength x Roll and causes Stun effect.
+Hurl- Requires two dice roll, Throws rocks causing 1-6 Damage.
+<br>
+Uses: Rock Hammer- +4 Damage</li>
+<br>
+<li><strong>Enraged Giant</strong>- The Enraged Giant is  giant creature known as a Collosal monster and originates from the Mythical Forest, his stats are as follows:
+<br>
+Level 2- Health Points 58, Strength 4, Base Damage of 4-30, Defense 3.
+<br>
+Skills are: Toss- Requires one dice roll, picks up and throws the player for 5 Damage.
+Crush- Inflicts damage Strenght x Roll plus Weapon Damage.
+<br>
+Uses: Rock Cleaver +6 Damage.</li>
+<br>
+<li><strong>Chaos Demon</strong>- The Chaos Demon originates from the Shadow Realm and is believed to be undead, It's stats are as followed:
+<br>
+Level 2- Health Points 56, Strength 4, Base Damage of 4-29, Defense 6, Resistance 3.
+<br>
+Skills are: Bash- Deals Damage Strength x Roll and inflicts Stun effect.
+Slash- Requires two dice rolls, Causes Bleed and deals 1-6 Damage.
+Intimidate- Requires two dice roll, on a prefect roll causes player to skip a turn.
+<br>
+Uses: Broadsword + 5 Damage and Iron Shield +2 Defense.
+</li>
+While there are only 5 monsters available there will be more added in the future.
+          </p>
+      </div>
+      <div id="encounters">
+<h1>Encounters</h1>
+<p>
+    Encounters are random events players can find throughout the game, these encounters can vary with traders, trainers or even an event.
+    <br>
+    <h3>Trainers</h3>
+    Initially there are only three trainers available, While the trainers are focused on class type for the most part it still allows players to gain new skills.
+    <strong>Stat Trainer</strong>, when encountered players can use Currency to improve certain stats, any player can use the trainer and gain stats to equip or use certain items.
+    <br>
+    <strong>Special Trainer</strong>, these trainers can give players the ability to increase unique stats <strong>SPECIAL</strong> these are things such as Strength and Perception which can help players use equipement or equip armour that they couldn't use before.
+    <br> 
+    While the final trainer is <strong>Skill Trainer</strong> which allows players to learn new skills like <strong>Bash</strong>, this allows players to gain a variety of different skills that can be used to take down monsters more easily.
+    <h3>Traders</h3>
+    Traders are a form of merchants who sell a variety of different wares to players. Upon encountering a trader it will generate random wares everytime the player enters the tile, this allows for purchasing better equipement and rarer items through chance (Luck also affects the wares being sold by rarity.)
+    While <strong>Traders</strong> aren't seperate vendors and function under one official style, they are linked to the shops in locations meaning players can obtain items in towns and not just through encounters.
+    <h3>Events</h3>
+    <strong>Events</strong> are also randomly generated throughout the game, when a player interacts with an event they can offer a variety of different choices, all choices are roll base chances or skill check requirements.
+    <br>
+    Upon entering the event a player is given prompts which can use: 
+    <li>Skills</li>
+    <li>Stats</li>
+    <li>Luck</li>
+    <li>Strength</li>
+    For example:
+    <br>
+    "Hey there stranger, my wagon appears to have turned over, would you lend your aid?"
+    Options:
+    Fix the wagon- 6 Strength. +1 Item <br>
+    Walk away- +2 Evil Reputation
+    <br>
+    Alternatively:
+    <br>
+    "You stumble upon a burned campsite, upon closer inspection you see a <strong>Bear</strong> loitering inside the camp, what will you do?"
+    Options:
+    <br>
+    Wait and watch the beast- Perception 4- Gain Nothing: Fail- Take 20HP from a bear attack<br>
+    Attack the Bear- Strength 5- Gain three items and a quest: Fail- Lose 25HP and -1 Item <br>
+    Sneak Past- Sneak 25- Escape the campsite: Fail- Lose -2 Items
+              <br>
+              All encounters can be accessed by all players and give players rewards alongside consequences related to the encounter.
+</p>
+      </div>
+      <div id="quests">
+          <h3>Quests</h3>
+          <p>
+              Quests are set as random encounters that players can find during their gameplay, these can give a variety of rewards from items to money.
+              <br>
+              Players can obtain quests from locations resembling towns or through random encounters with with merchants or beggers. (These encounters arent available for the initial release.)
+              <br>
+              For example:
+              <br>
+              Can you take this "Letter" to the gaurds at the "Watch Tower"?
+              Reward: 60 Silver and <strong>Longbow</strong>
+              <br>
+              Quests vary in difficulty with delivery quests being the easiest, some require players to locate towns or ruins, whereas some require players to defeat a monster if one is already revealed.
+              <br>
+              For Example:
+              Locate and kill the "Enraged Giant" Reward: 6 Gold and 37 Silver.
+              <br>
+              While the initial version for beta won't have access to all quests and rewards, these will be added in the near future before the final release.
+          </p>
+      </div>
+      </body>
+      <footer>
+        <nav>
+            <ul>
+                <li id="#icon"><a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image"><img src="Artwork/Instagram_icon.jpg"></a></li>
+                <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Facebook_icon.jpg"></a></li>
+               <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Twitter_icon.jpg"></a></li>
+               <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/fiverr_logo.jpg"></a></li>
+               <li id="#icon"><a href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/patreon-icon.jpg"></a></li>
+               <br>
+               <p>Please note not all social medias currnetly operate or exist, these will be coming soon!</p>
+                <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
+            </ul>
+        </nav>
+      </footer>
+    
+</html>

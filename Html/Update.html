@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tales of Rievara</title>
+     <link rel="stylesheet" href="css/style.css">
+     
+     <style>
+          
+ #btnscrolltotop {
+        position: fixed;
+        right : 10px;
+        bottom: 100px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background:red;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: white ;
+        border: none ;
+        outline: none;
+        cursor: pointer;
+      } 
+      </style>
+      </head>
+        <body>
+            <form> <button type="submit" id="btnscrolltotop">
+                <i class="material-icon">Top</i>
+              </button>
+             </form>
+            <nav>
+                <ul>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="how-to-play.html">How to Play</a></li>
+                   <li><a href="Gallery.html"> Gallery </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Update.html">Updates</a></li>
+               </ul>
+            </nav>
+            <!-- Image and Audio controls-->
+               <img id="Banner" src="Artwork/tales of rievara.jpg" alt="your browser doesnt support this image" >
+              <br>
+               <audio controls 
+            src="media/Music.mp3" >
+    <span>Your browser doesn't support this file.</span>
+</audio>
+<h1>Snapshot photos</h1>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Artwork/Board-background-1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Artwork/boardbackground2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Artwork/boardbackground3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons posible future additions, not implemented for this project!
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<h1>Updates and Release dates</h1>
+<p>
+  Initial beta release for the card game version is around December 2021, while currently it is only a beta and has limited features future plans involve new Customisable Card decks, Market place and new Character cards.
+  <br>
+  While these wont be in the intial build, design work and marketplace features for in game are currently being tested in preperation for the first Alpha release.
+</p>
+<br>
+<p>
+  <h1>Below will hold a list of every update before and after release</h1>
+  Updates are currently unavailable and will be scheduled at a later date, thank you for your patience.
+</p>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  
+  const btnscrolltotop= document.queryselector("#btnscrolltotop");
+          btnscrolltotop.addeventlistener("click", function (){
+            window.scrollto(0, 0);
+          })
+         
+       </script>
+</body>
+<footer>
+  <nav>
+      <ul>
+          <li id="#icon"><a href="https://www.instagram.com/accounts/login/" target="_blank" alt="Your browser doesn't support this image"><img src="Artwork/Instagram_icon.jpg"></a></li>
+          <li id="#icon"><a href="https://www.facebook.com/talesofrievara/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Facebook_icon.jpg"></a></li>
+         <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/Twitter_icon.jpg"></a></li>
+         <li id="#icon"><a href="https://twitter.com/login?lang=en-gb" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/fiverr_logo.jpg"></a></li>
+         <li id="#icon"><a href="https://www.patreon.com/" target="_blank" alt="Your browser doesn't support this image."><img src="Artwork/patreon-icon.jpg"></a></li>
+         <br>
+         <p>Please note not all social medias currnetly operate or exist, these will be coming soon!</p>
+          <!-- Ths has been placed as a precursor for future social medias and is not being used for the project as of this current date. It has also been used to create an outline border to the page.-->
+      </ul>
+  </nav>
+</footer>
+</html>
